@@ -3,7 +3,7 @@ import datetime
 import time
 
 
-# Initialize the camera
+# Initialize the camera; 1 camera device
 cap = cv2.VideoCapture(0)
 
 # Set the camera resolution
@@ -20,7 +20,7 @@ start_time = time.time()
 
 # Create a VideoWriter object to save the video to a file
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
+out = cv2.VideoWriter('footage.mkv', fourcc, 20.0, (640, 480))
 
 while True:
     # Capture the frame from the camera
@@ -38,7 +38,7 @@ while True:
     cv2.putText(frame, "Timer: {}".format(time_left), (20, 150), font, 0.45, color, 2, cv2.LINE_AA)
 
     # Display the frame
-    cv2.imshow('Camera', frame)
+    cv2.imshow('CCTV-Camera Footage', frame)
 
     # Write each frame to the video file
     out.write(frame)
