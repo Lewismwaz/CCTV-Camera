@@ -14,7 +14,7 @@ cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 800)
 font = cv2.FONT_HERSHEY_SIMPLEX
 color = (0, 255, 0)  # green color
 
-# Set the timer for 10 seconds
+# Set the timer for 1 hour
 timer = 3600
 start_time = time.time()
 
