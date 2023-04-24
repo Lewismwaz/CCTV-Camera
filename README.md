@@ -1,1 +1,1 @@
-# CCTV-Camera
+# Simple CCTV-Camera in python
